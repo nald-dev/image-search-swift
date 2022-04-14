@@ -47,41 +47,13 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3B4-aU-o4m">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vTn-lZ-AmF">
                                                         <rect key="frame" x="20" y="73.5" width="374" height="50"/>
-                                                        <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q1j-n8-JWi">
-                                                                <rect key="frame" x="0.0" y="0.0" width="294" height="50"/>
-                                                                <subviews>
-                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search something..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mgq-Pd-lRq">
-                                                                        <rect key="frame" x="20" y="0.0" width="189" height="50"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="height" constant="50" id="G4p-2a-j1b"/>
-                                                                        </constraints>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                        <textInputTraits key="textInputTraits"/>
-                                                                    </textField>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bu-OO-qJg">
-                                                                        <rect key="frame" x="209" y="0.0" width="65" height="50"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="width" constant="65" id="nMc-uq-aOf"/>
-                                                                        </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain" title="Clear"/>
-                                                                    </button>
-                                                                </subviews>
-                                                                <edgeInsets key="layoutMargins" top="0.0" left="20" bottom="0.0" right="20"/>
-                                                            </stackView>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7PR-cN-lNC">
-                                                                <rect key="frame" x="294" y="0.0" width="80" height="50"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="80" id="K4e-Ac-z9v"/>
-                                                                </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="Search"/>
-                                                            </button>
-                                                        </subviews>
-                                                    </stackView>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="F2s-my-Ngj"/>
+                                                        </constraints>
+                                                    </view>
                                                 </subviews>
                                                 <edgeInsets key="layoutMargins" top="20" left="20" bottom="0.0" right="20"/>
                                             </stackView>
@@ -117,10 +89,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="dVZ-A1-tlr"/>
                     <connections>
-                        <outlet property="clearInputButton" destination="7bu-OO-qJg" id="U72-Y2-nXj"/>
-                        <outlet property="inputContainer" destination="q1j-n8-JWi" id="FLV-6a-Xtl"/>
-                        <outlet property="searchButton" destination="7PR-cN-lNC" id="nGP-PE-CeJ"/>
-                        <outlet property="searchTextField" destination="Mgq-Pd-lRq" id="ukF-9P-BfE"/>
+                        <outlet property="reusableSearchBarContainer" destination="vTn-lZ-AmF" id="Vft-vR-e4a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iew-bS-c3F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

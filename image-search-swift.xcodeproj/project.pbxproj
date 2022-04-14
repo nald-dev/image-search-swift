@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F8259442807D579000B0893 /* ReusableSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8259432807D579000B0893 /* ReusableSearchBar.swift */; };
 		2F858F9C28063FD60028E73C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F858F9B28063FD60028E73C /* AppDelegate.swift */; };
 		2F858F9E28063FD60028E73C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F858F9D28063FD60028E73C /* SceneDelegate.swift */; };
-		2F858FA028063FD60028E73C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F858F9F28063FD60028E73C /* ViewController.swift */; };
 		2F858FA328063FD60028E73C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F858FA128063FD60028E73C /* Main.storyboard */; };
 		2F858FA528063FD90028E73C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F858FA428063FD90028E73C /* Assets.xcassets */; };
 		2F858FA828063FD90028E73C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F858FA628063FD90028E73C /* LaunchScreen.storyboard */; };
@@ -17,6 +17,7 @@
 		2F858FBD28063FD90028E73C /* image_search_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F858FBC28063FD90028E73C /* image_search_swiftUITests.swift */; };
 		2F858FBF28063FD90028E73C /* image_search_swiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F858FBE28063FD90028E73C /* image_search_swiftUITestsLaunchTests.swift */; };
 		2F858FCC2806E7F30028E73C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F858FCB2806E7F30028E73C /* HomeVC.swift */; };
+		2FC64F6F2807CAB300FB6C6A /* ReusableSearchBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FC64F6E2807CAB300FB6C6A /* ReusableSearchBar.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F8259432807D579000B0893 /* ReusableSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableSearchBar.swift; sourceTree = "<group>"; };
 		2F858F9828063FD60028E73C /* image-search-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "image-search-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F858F9B28063FD60028E73C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F858F9D28063FD60028E73C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2F858F9F28063FD60028E73C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2F858FA228063FD60028E73C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F858FA428063FD90028E73C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F858FA728063FD90028E73C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		2F858FBC28063FD90028E73C /* image_search_swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = image_search_swiftUITests.swift; sourceTree = "<group>"; };
 		2F858FBE28063FD90028E73C /* image_search_swiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = image_search_swiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2F858FCB2806E7F30028E73C /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		2FC64F6E2807CAB300FB6C6A /* ReusableSearchBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReusableSearchBar.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F31A7062807DDA800ACCE88 /* ReusableComponents */ = {
+			isa = PBXGroup;
+			children = (
+				2FC64F6E2807CAB300FB6C6A /* ReusableSearchBar.xib */,
+				2F8259432807D579000B0893 /* ReusableSearchBar.swift */,
+			);
+			path = ReusableComponents;
+			sourceTree = "<group>";
+		};
 		2F858F8F28063FD50028E73C = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +112,10 @@
 		2F858F9A28063FD60028E73C /* image-search-swift */ = {
 			isa = PBXGroup;
 			children = (
+				2F31A7062807DDA800ACCE88 /* ReusableComponents */,
+				2FC64F692807C92D00FB6C6A /* ViewControllers */,
 				2F858F9B28063FD60028E73C /* AppDelegate.swift */,
-				2F858FCB2806E7F30028E73C /* HomeVC.swift */,
 				2F858F9D28063FD60028E73C /* SceneDelegate.swift */,
-				2F858F9F28063FD60028E73C /* ViewController.swift */,
 				2F858FA128063FD60028E73C /* Main.storyboard */,
 				2F858FA428063FD90028E73C /* Assets.xcassets */,
 				2F858FA628063FD90028E73C /* LaunchScreen.storyboard */,
@@ -128,6 +139,14 @@
 				2F858FBE28063FD90028E73C /* image_search_swiftUITestsLaunchTests.swift */,
 			);
 			path = "image-search-swiftUITests";
+			sourceTree = "<group>";
+		};
+		2FC64F692807C92D00FB6C6A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F858FCB2806E7F30028E73C /* HomeVC.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FC64F6F2807CAB300FB6C6A /* ReusableSearchBar.xib in Resources */,
 				2F858FA828063FD90028E73C /* LaunchScreen.storyboard in Resources */,
 				2F858FA528063FD90028E73C /* Assets.xcassets in Resources */,
 				2F858FA328063FD60028E73C /* Main.storyboard in Resources */,
@@ -261,8 +281,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F858FA028063FD60028E73C /* ViewController.swift in Sources */,
 				2F858FCC2806E7F30028E73C /* HomeVC.swift in Sources */,
+				2F8259442807D579000B0893 /* ReusableSearchBar.swift in Sources */,
 				2F858F9C28063FD60028E73C /* AppDelegate.swift in Sources */,
 				2F858F9E28063FD60028E73C /* SceneDelegate.swift in Sources */,
 			);
